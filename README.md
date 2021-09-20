@@ -4,11 +4,15 @@
 
 <!-- <img src = "/images/PXL_20210525_144343463.jpg" width = 500 height =700> -->
 Gaggiuino started as an idea to improve an already cappable coffee machine while keeping the machine looks and buttons functionality as close as possible to the original, an important part is that no internal cables/connectors were modified, all the connections were made by creating splitters using the purchased spade connectors.
+***
+#### SUCCESSFUL INSTALLS:
 
->*First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it, only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the bellow guide i cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
-
-I will assume you have  the necessary components and installed the related software, for the sake of not getting stuck at some point just double check again the list bellow.
-
+   MODEL              |    YEAR   |  VOLTAGE   |PHOTOS
+   -------------------|-----------|------------|--------
+   Gaggia Classic | 2012 | 240v     | https://bit.ly/2Xv1fiv
+   Gaggia Classic Pro | 2019 | 115V | https://imgur.com/gallery/SF3zP0b
+   
+***
 #### Features / Completeness 
 
 - [x] Housing - **credits @LikeableBump**
@@ -18,10 +22,62 @@ I will assume you have  the necessary components and installed the related softw
 - [x] Descale program
 - [x] Steaming alert
 - [x] Brew start sense
-- [ ] Pre-infusion - **COMING SOON**
-- [ ] Auto pressure profiling - **COMING SOON**
-- [ ] Manual pressure control - **COMING SOON**
-##### << Ideas are welcome in the Issues tab >>
+- [x] Pre-infusion
+- [x] Auto pressure profiling
+- [x] Manual pressure control
+- [x] Auto shot timer
+- [x] Regional power options
+
+>Notes:
+>* Pressure:
+>     * It is expected your OPV has been tuned to 9bar by default.
+>     * Pressure isn't tuned yet due to the absence of a gauge, it's been ordered and we're at the delivery services' mercy, for the time being pressure was calculated according to water flow.
+>* Regional power:
+>     * Defaults to 230V/50Hz and should be changed to the regional values for the correct work of the ACS712 sensor.
+
+***
+#### Possible future features:
+* Pressure transducer
+   * Used for a feedback loop to make real-time pressure adjustments based on puck resistance
+   * Possibly auto-calibration of non 9bar
+* Load cells
+   * Exploring the options of integrating some small load cells with the water tray for real time weight feedback.
+* Flow sensor
+   * Exploring the idea of introducing some water flow sensing so predefined ammounts of water can be output, this might prove to be less useful and kind of redundant with the load cells, unless it adds some benefit i don't see yet.
+
+**[<< Ideas are welcome in the Issues tab >>](https://github.com/Zer0-bit/gaggiuino/issues)**
+***
+
+#### As part of considerably upgrading the project i've taken it upon me to bring a new UI as well, hopefully nicer than the old one:
+<img src="https://db3pap006files.storage.live.com/y4mVSHlwib9lZho2UFEGaXuhEy_-udrWos8DhK9nqyGQbwSvrOUYjv0LZC3yKIGTdN1iR0A8a5hdYz6-Xq12ut8ZEBgyX5ga4AsGR9KCVaGB8NN4OetwCOO4OxejVb2VB2eXID9eFXlfLk30IR4-x88ahRgCHiXFpZhCvF7N6RTa_V8Uh0mz0ByTsM76aumAk7s?width=401&height=302&cropmode=none" width="401" height="302" />  <img src="https://db3pap006files.storage.live.com/y4mQDD43TPZqb-3HGVqKNvm6hYuTcwN2u-kUB62B4pJgADFn9Y_M7Fdrf5s61LfzjCv2itomT5BntyLnkoFRQkKZWg3rsYc8eBob61R8R7xUJP7moKiSYlrqudgPCOVwM6lzLaVlu09vcz1-wgVdIBqCDmKS2oYS881Bu01A-wFQ8ecRJnoSF-LwRyOza7BPWGx?width=403&height=302&cropmode=none" width="403" height="302" />  <img src="https://db3pap006files.storage.live.com/y4mtvUFNT1vL0e5cL9aGd0MCMDnMXPcPBRtYXag_RtX0mPUtuMLR2ArVwg3SZHXTHNghGdc6u8jzyyCu9Ql4mJYL7LEFa4jubG6gSLzipwrN4TjnrKlO2DEAqW-SOn6EYM3-4_hX8RJ3lyK-OliGj0AEOg94DFDg4vAsotzoS1iTuTvGwyO5R38U5GveQnYN_M1?width=401&height=298&cropmode=none" width="401" height="298" />  <img src="https://db3pap006files.storage.live.com/y4mFYIKZKyaOliinPbi5sHYjowb8vTw3fTGwGIFNf5IrW35ssovgP26TFManWM6LChMDbTxD-MD348tVj8_AcmWuyJelJcx7CyNQPo_zVgXxZRVeBMNPAw5Hbzkd6aOQTEBp6qvT8m3ASvUCvaXKc7-bp-a4xxNywAvjTx5NN_ERN2GVKecbGTcVTuX7DuiTomn?width=402&height=302&cropmode=none" width="402" height="302" />  <img src="https://db3pap006files.storage.live.com/y4mzQv7QY7l1QtR_5T3qBmUA7vRBi9-gmMS-lqjcrdtMb0mMA1q9YYxOWNLSjPfBRbmHcxABEqCHef-srKAO-TPVFEhV5OCa2XxkJXNnuO7M-BtX82H_FkXLk1hLL9A11MR0aNlkRnnwlrtaGIeH6GUtEjz4toD-hIt11wTv103uz68Xbo7fVNmjOQ5lqTSCTgv?width=400&height=302&cropmode=none" width="400" height="302" />  <img src="https://db3pap006files.storage.live.com/y4mDkszRvittz8CcKfFbD31bCH8LkxecErKo2vlMoP10GMPZhDUNUlU3CwAB6ceE3mFYXPok2P46IRHdhs7Rnzz444gfbKlkmHGav7ORudRZElDyE1JVw5AMtsGdK388wilomZfOqo0o93htyFS_t1RnNe7W9VJ5GFUxXfbRXqG8tY3MN_OMMKmd2QrbUjfFbGC?width=401&height=305&cropmode=none" width="401" height="305" />
+
+***USAGE:***
+
+ * BOILER      - sets the desired temperature at the boiler level
+ * OFFSET      - sets the offset value used to calculate the real water temperature
+ * HPWR        - sets the relay start pulse length
+ * M.C.DIV     - sets the main cycle divider(aka non brew heating beahaviour), used in conjunction with HPWR
+ * B.C.DIV     - sets the brew cycle divider
+ * PREINFUSION - sets the preinfusion length and pressure
+ * P-PROFILING - enables either AUTO or MAN pressure profiling mode
+
+       AUTO     - sets the profiling trend incremental or decremental (can be combined with preinfusion), some examples bellow:
+       MAN      - allows for manual pressure control at brew time
+ * DESCALE     - enables the descaling program, at this point there's only one default behaviour:
+
+         flush - 10s x5 at 2bar
+         flush - 20s x5 at 1 bar
+         idle  - 5min at 0 bar
+
+***Pre-infusion[PI] and pressure profile[PP] usage examples:***
+
+No| BREW MODE   | DESCRIPTION
+---|--------------|--------------
+1.| [PP] 9bar >> 6bar | the brew starts at 9 bars and stays at 9bar for 8 seconds then starts slowly dropping towards 6 bars,all this aims the official 30 seconds shot times, if the shot goes above 30s seconds the pressure will just remain at 6 bar untill the end of the shot.
+2.| [PP] 6bar >> 9bar | same as above but viceversa.
+3.| [PP] 6bar >> 6bar | the pressure stays locked at 6 bar.
+4.| [PI] 8sec >> 2bar [PP] 9bar >> 5bar | preinfusion for 8 seconds at 2 bar >> pause 3 seconds (aka soaking) >> behaviour from point 1.
+
 
 
 # **PROJECT REQUIREMENTS**
@@ -31,7 +87,7 @@ I will assume you have  the necessary components and installed the related softw
     >*Needed to upload the code ".ino" to the arduino ROM*
 
 
-   **Libraries to add:**
+   **Libraries to [add](https://www.arduino.cc/en/Guide/Libraries?setlang=en):**
    
          Library manager:
           - Easy Nextion Library
@@ -48,7 +104,7 @@ I will assume you have  the necessary components and installed the related softw
     >*USB driver so your system recognizes the Arduino clone board, let's say i have found this the hard way as apparetly the majority of cloned arduinos use a cheaper USB controller comparing to "genuino"*
 
 ### **Hardware requirements:**
-###### The code has been designed to be plugable, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, next to the hardware component there will be anotated whether its a [BASE] or [EXT] functionality companent type
+###### The code has been designed to be plugable, meaning there is a minimal hardware configuration one can start with if certain features are not something of interest, next to the hardware component there will be anotated whether its a [BASE] or [EXT] functionality component type
 
 1. [Arduino Nano](https://bit.ly/3eXSfXZ)  **[BASE]**
     >*Be sure to buy the AT328 version, also if you're buying the mini usb version buy the cable from them, you'll save yourself a lot of problems.
@@ -56,25 +112,26 @@ I will assume you have  the necessary components and installed the related softw
 3. [MAX7765 thermocouple](https://bit.ly/3ejTUIj)  **[BASE]**
 4. [C-M4 screw K-Type thermocouple sensor](https://bit.ly/3nP1WMm)  **[BASE]**
 5. [40DA SSR Relay](https://bit.ly/33g1Pjr)  **[BASE]**
-6. *NEW Functionality* [RobotDYN dimmer module - Dimmer 4A-400V ](https://bit.ly/3xhTwQy) **[EXT]**
-7. *NEW Functionality* [Hall Current Sensor Module ACS712 - 20A](https://bit.ly/38MCiRv) **[EXT]**
+6. [RobotDYN dimmer module - Dimmer 4A-400V ](https://bit.ly/3xhTwQy) **[EXT]**
+7. [Hall Current Sensor Module ACS712 - 20A](https://bit.ly/38MCiRv) **[EXT]**
 8. [Thermo-resistant cables AWG 15 ( 1m black/red ) and AWG 30 ( 1m black/red/yellow )](https://bit.ly/3tjSQbI) **[BASE]**
 9. [Spade connectors M/F 6.3mm](https://bit.ly/2Sjrkhu)
 10. [5v Power Adaptor](https://bit.ly/2WPHGkg) **[BASE]**
     >*I used an old mobile charger i had lying around which conveniently had a USB port for plugging the cable that came with the  board, exactly like in the link above.*
 
+### Housing :
+ * [Gaggia Classic Arduino & Touchscreen Housing](https://www.thingiverse.com/thing:4949471)
+     >Designed by the redditor [/u/LikeableBump1](https://www.reddit.com/r/gaggiaclassic/comments/phzyis/gaggia_with_arduino_pid_in_3d_printed_case/)
+
+
 **Optional:**
  * [Heat shrink](https://bit.ly/2PQdnqt)
- * [U-shaped Parallel Terminal](https://bit.ly/3h8phaF)  - These are in case you're choosing not to solder
- * [Soldering iron](https://bit.ly/3tijlOI) - the one i bought for my soldering needs,  seems to do a great job
- * [Nextion LCD case](https://bit.ly/3b2nxf7)
- * [Magnet sheet](https://bit.ly/3xKTMJn)
+ * [Soldering iron](https://bit.ly/3tijlOI) 
+    >I bought it for my soldering needs, seems to do a great job, it's important to not leave it ON while not in use as the heating element will get damaged.
 
 
- ## The housing for all of the above hardware has been designed and provided kindly by @LikeableBump and can be found on thingiverse by following the link bellow:
- 
-   [Gaggia Classic Arduino & Touchscreen Housing](https://www.thingiverse.com/thing:4949471)
-
+***!! WARNING !!***
+>*First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it, only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the below guide i cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
 
 # Assembling #
 First we need to understand what goes where, the schematics aren't really rocket science but for someone who's never disasembled or has no experience working with electrical circuits it might get confusing real fast so i will try to describe it as simple as possible yet limited by my vocabulary.
@@ -91,9 +148,9 @@ First let's check the setup works as expected while outside the machine so you d
     ---------|-----------
      VCC     |   5v
      GND     |   GND
-     SCK     |   CLK
-     SO      |   DO
-     CS      |   CS
+     SCK     |   D6
+     SO      |   D4
+     CS      |   D5
 
 2. Connect the relay, for now only connect the circuit controlling ports to check whether the relay LED indicates the power states.
 
@@ -161,11 +218,12 @@ First let's check the setup works as expected while outside the machine so you d
 
 >*AGAIN!!! Tripple check your machine is disconnected from any power sources, even better just pull the power cable out of it !*
 
-**So here goes:**
-1. Take off the top cover by unscrewing the 2 top screws, you should be able to see smth similar to the bellow image minus the SSR relay:
+#### BASE FUNCTIONALITY
+
+1. Take off the top cover by unscrewing the 2 top screws, you should be able to see smth similar to the below image minus the SSR relay:
 <img src="https://db3pap006files.storage.live.com/y4m4pob4r1pDtjBPqIyA-dqHOH_eZDJaf6W2dYdHlIh8G8OWusXig9WUKOA-iBCk2QRN-lL3ajrWDDUBASx_frpWqz_2z1dxeAnksAKKysKqL-eXE9PVRYeA2SdmS_DSkAA3TJ5ZVe3ybpkLYV0-PDKLjEhxNZluA_UX8ektw8kGW4PXKQeQU-UUJtjuaDSYKsG?width=3496&height=4656&cropmode=none" width="769" height="1024" />
 
-2. Prepare 2 splitters like in the bellow image using the AWG15 cable, be sure one splitter to be black(negative) and one red(positive)
+2. Prepare 2 splitters like in the below image using the AWG15 cable, be sure one splitter to be black(negative) and one red(positive)
 <img src="https://db3pap006files.storage.live.com/y4mGdTrz4hXNuu3rvDk5qro2WGn5xqy8ZVGwhJSXFSDqmJErI8dYufS1H-l_PnIIa0HffKXPuPkvbRjNHt_2OogxaW8UohuFKatz3BfjjK8NEGmynX2unmeZ6opV3_gd-u0f3cCAlgh9nF5spGDt12McFxpxzsatrSK2YuRgrFTfFnxMvMmiXss0XSLrZGx5xIa?width=769&height=1024&cropmode=none" width="769" height="1024" />
 
 3. Be sure to mark your top left power connector so you don't mix them up ( even though it's not that hard to understand which one is which)
@@ -183,7 +241,7 @@ First let's check the setup works as expected while outside the machine so you d
 So you end up having them connected like this:
 <img src="https://db3pap006files.storage.live.com/y4m5HfjPvkFSOtSm8gkTJJ4saqEw8dcB1no2eoaHcDZjYD9OV95tBnrG8tqtRuOcor7aFZrIRw7167k4QGMUneOPATitBFctkgdklxWOohMyBir3zLdm9fkAnTQW8TquTZouRh9rzKSC0t5bkerK1g8AzlFYTfuZoDPQ3juFiOJ19JKiL6VpODn40Z1q8JwVpGy?width=2625&height=2831&cropmode=none" width="769" height="769" />
 
-7. Prepare 2 more 10cm cables( also colour coded accordingly) which should be crimpled with M/F spade connectors at each end, the female end will go in Gaggia's front panel and the male end will go to the female end of the previously prepared(2) splitters, as in the bellow:
+7. Prepare 2 more 10cm cables( also colour coded accordingly) which should be crimpled with M/F spade connectors at each end, the female end will go in Gaggia's front panel and the male end will go to the female end of the previously prepared(2) splitters, as in the below:
 <img src="https://db3pap006files.storage.live.com/y4m2LoENSwBicOmRtvdMKM9srnf4tfNECBkaNXWkkGxxEAMbc_BuQhQnYgVH7h0FZ52NIDiIudlx2NhDkm1747Y9wT60F7uoHMJu-lx_MF-mPXBbzOyeZNVuEdrISfsi56v7VYKNZIgby3qUD922gMJCI177q0IttLhWXn_VM9OamG0FvyKQ3T26uqOye6H50eV?width=769&height=1024&cropmode=none" width="769" height="1024" />
 <img src="https://db3pap006files.storage.live.com/y4myMKUSADo1HIGEXQ42p9tP1UKzL2aUqI6gCv3st6cBqR921Y-xWkhHB9QYaUlubJC-wCs5swyMaXX-p9LJu0qDgOgMKwkMyW-KUdUkkQWZ7-VdJNZiWv2duaBEcFtGo34uX1_-mqF66PpgseniGFKGhJmO-o5n8Pb2TP2it0vyQBcLAgX00jzVl-H6L5NeVzE?width=769&height=1024&cropmode=none" width="769" height="1024" />
 
@@ -193,3 +251,17 @@ So you end up having them connected like this:
 <img src="https://db3pap006files.storage.live.com/y4myMKUSADo1HIGEXQ42p9tP1UKzL2aUqI6gCv3st6cBqR921Y-xWkhHB9QYaUlubJC-wCs5swyMaXX-p9LJu0qDgOgMKwkMyW-KUdUkkQWZ7-VdJNZiWv2duaBEcFtGo34uX1_-mqF66PpgseniGFKGhJmO-o5n8Pb2TP2it0vyQBcLAgX00jzVl-H6L5NeVzE?width=769&height=1024&cropmode=none" width="769" height="1024" />
 
 10. Now you're ready to connect everything to the arduino like you did it when testing everything, one advice would be to solder all the arduino connected cables a during the machine operation there is quite a bit of vibration and that can introduce all sorts of noise/frequent disconnects to certain pins which will lead to unexplained behaviours.
+
+
+#### EXTENDED FUNCTIONALITY
+
+1. While installing the ACS712 Hall current sensor please note in the photo below the way the sensor faces the camera and how the cable passthrough is done with the cable originall connected to the middle slot front panel brew button (1), it's a short cable connecting the brew button with the steam button, we leave it connected to the steam button but the end which was connected to the middle slot of the brew button connects now to the top port of the ACS712 board (1) and then the exit(2) port of the ACS712 board  feeds a cable to the original front panel brew button position.
+
+>**!It is important to conect the cables properly as the sensor has a polarity and when incorrectly connected outputs a negative value**
+
+<img src="https://db3pap006files.storage.live.com/y4mDAGJwdsJP2Vv-Z4FCeTheZSWYlCj09fbWdURcj2t_qeDla_UaWY3qT23MZKsIiQtbH-d7TOS4nRDypYBrDUeFm7eEsL2LidREYBNIylJlCSIntsNItisdsSFSfqbPvGYsZDJ-dJ7_uKYD1gjYabCTC99pB-EVuW7BvWW2v7ut7aK4NLarH9iTjjNRDBpAc88?width=768&height=1024&cropmode=none" width="768" height="1024" />
+
+2. Installing the RobotDYN dimmer module.
+<img src="https://db3pap006files.storage.live.com/y4mC6f3vykKE40Z3FnrvrwriXgztoGaPAV_PoeIreyugKLhfK58o9KyQo1mANet1k-s0EZ2Shp6a1P6dEv13bQBIGwZKyxHMuIoPMJTO4GjAzESpHOXRNeBMtV5rZ8qGRWoPKVo13ahvh0V9hAYXGdPs5Zp7KpXnCSwjA2xiSqODEEy0y9d5zVJRxJAL1ovjVgB?width=1920&height=1080&cropmode=none" width="810" height="520" />
+
+>Once installed tests can be done to verify the dimmer output is the expected one, this will require having either a [portafilter gauge](https://www.amazon.co.uk/Portafilter-Pressure-Espresso-Machines-ESPRESS/dp/B00ONTGKNA) or a [internally mounted gauge](https://www.ebay.com/itm/401980168959?hash=item5d97e29aff:g:fugAAOSwzkRd4~Jl).
